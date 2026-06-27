@@ -9,5 +9,7 @@ dependencies = [
     "bcrypt>=5.0.0",
     "fastapi>=0.138.1",
     "pytest>=9.1.1",
+    "sqlalchemy>=2.0.51",
     "uvicorn>=0.49.0",
+    "python_dotenv=1.2.2"
 ]
