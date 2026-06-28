@@ -1,8 +1,9 @@
-from sqlalchemy import UUID, text
+import uuid
+
+from sqlalchemy import UUID
+from sqlalchemy.orm import Mapped, mapped_column
 
 from .create_db import Base
-from sqlalchemy.orm import mapped_column, Mapped
-import uuid
 
 
 class Users(Base):
