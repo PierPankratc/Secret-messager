@@ -1,6 +1,3 @@
-def main():
-    print("Hello from secrets-messager!")
+from src.app.main import app, main
 
-
-if __name__ == "__main__":
-    main()
+__all__ = ["app", "main"]

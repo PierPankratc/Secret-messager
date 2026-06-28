@@ -13,5 +13,7 @@ def test_create_db_imports_and_creates_sqlite_database(tmp_path, monkeypatch):
 
     module = importlib.import_module("src.db.create_db")
 
+    module.create_db()
+
     assert module.engine is not None
     assert db_path.exists()

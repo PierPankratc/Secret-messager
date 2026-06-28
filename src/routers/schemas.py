@@ -1,10 +1,11 @@
 from uuid import UUID
+
 from pydantic import BaseModel, Field
 
 
 class Users(BaseModel):
     user: str = Field(max_length=50)
-    passwd: str = Field(max_digits=810)
+    passwd: str
 
 
 class UserResponse(BaseException):

@@ -1,15 +1,23 @@
 [project]
 name = "secrets-messager"
 version = "0.1.0"
-description = "Add your description here"
+description = "One-time encrypted message service"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "alembic>=1.18.5",
     "bcrypt>=5.0.0",
+    "cryptography>=42.0.0",
     "fastapi>=0.138.1",
     "pytest>=9.1.1",
     "sqlalchemy>=2.0.51",
     "uvicorn>=0.49.0",
-    "python_dotenv=1.2.2"
+    "python_dotenv>=1.2.2",
 ]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

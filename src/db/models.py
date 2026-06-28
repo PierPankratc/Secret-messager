@@ -11,7 +11,7 @@ class Users(Base):
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user: Mapped[str] = mapped_column(nullable=False)
-    hached_passwd: Mapped[str | None] 
+    hached_passwd: Mapped[str | None] = mapped_column(nullable=True)
 
 
 class Messages(Base):
