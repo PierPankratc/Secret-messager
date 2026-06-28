@@ -9,6 +9,7 @@ dependencies = [
     "bcrypt>=5.0.0",
     "cryptography>=42.0.0",
     "fastapi>=0.138.1",
+    "httpx2>=0.28.0",
     "pytest>=9.1.1",
     "sqlalchemy>=2.0.51",
     "uvicorn>=0.49.0",
