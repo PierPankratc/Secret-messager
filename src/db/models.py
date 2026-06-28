@@ -5,8 +5,6 @@ from sqlalchemy.orm import mapped_column, Mapped
 import uuid
 
 
-
-
 class Users(Base):
     __tablename__ = 'users'
 
